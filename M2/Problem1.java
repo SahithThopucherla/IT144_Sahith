@@ -14,15 +14,35 @@ public class Problem1 extends BaseClass {
         // Step 2: Add/commit your outline of comments (required for full credit)
         // Step 3: Add code to solve the problem (add/commit as needed)
         System.out.print("Output Array: ");
+
         // Start Solution Edits
         
+         // UCID: st944 | Name: Sahith T. | Date: 09/29/2025
+        // Plan for Problem 1 (printOdds):
+        // 1. Loop through the array elements
+        // 2. Check if each number is odd (num % 2 != 0)
+        // 3. Print odd numbers in a single line
+        // 4. Separate numbers with commas
+        // 5. Avoid an extra comma at the end
+        // Start Solution Edits
+        
+        // UCID: st944 | Name: Sahith T. | Date: 09/29/2025
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                if (count > 0) {
+                    System.out.print(", ");
+                }
+                System.out.print(arr[i]);
+                count++;
+            }
 
         // End Solution Edits
         System.out.println("");
         System.out.println("______________________________________");
     }
     public static void main(String[] args) {
-        final String ucid = "mt85"; // <-- change to your UCID
+        final String ucid = "st944"; // <-- change to your UCID
         // no edits below this line
         printHeader(ucid, 1);
         printOdds(array1,1);
